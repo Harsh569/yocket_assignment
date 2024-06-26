@@ -17,10 +17,10 @@ app.use(
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose
-  .connect(MONGO_URL)
-  .then(() => console.log("MongoDB is connected successfully"))
-  .catch((err) => console.error(err));
+// mongoose
+//   .connect(MONGO_URL)
+//   .then(() => console.log("MongoDB is connected successfully"))
+//   .catch((err) => console.error(err));
 
 app.use("/game", gameRoutes);
 
